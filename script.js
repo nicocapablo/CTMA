@@ -533,7 +533,7 @@ function mostrarMensaje(texto, tipo) {
   const chat = document.getElementById("chat");
   const msg = document.createElement("div");
   msg.classList.add("message", tipo);
-  msg.textContent = texto;
+  msg.innerHTML = texto.replace(/\n/g, "<br>");
   chat.appendChild(msg);
   chat.scrollTop = chat.scrollHeight;
 }
@@ -586,6 +586,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("btnC").onclick = () => responder("c");
   document.getElementById("btnD").onclick = () => responder("d");
 });
+
 
 
 
