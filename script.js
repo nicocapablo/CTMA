@@ -525,10 +525,10 @@ const preguntas = [
 
 // --- FRASES DE ÁNIMO ---
 const frases_animo = [
-  "¡Muy bien amor! 😎",
+  "¡Muy bien! 😎",
   "¡Eso es, perfecto, te camelo caramelo! 🔥",
   "¡Ole tú huevos! 💪",
-  "¡Exacto, estás on fire tia! 🚀",
+  "¡Exacto, estás on fire! 🚀",
   "¡Qué máquina eres! 😍",
   "¡Correcto, así se hace! 👏",
   "¡Te lo sabes de memoria ya! 💥"
@@ -596,6 +596,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("btnC").onclick = () => responder("c");
   document.getElementById("btnD").onclick = () => responder("d");
 });
+
 
 
 
