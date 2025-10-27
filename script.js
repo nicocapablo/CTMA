@@ -512,86 +512,123 @@ const preguntas = [
 }
 
 ];
-
 // --- FRASES DE ÁNIMO ---
 const frases_animo = [
-  "¡Muy bien! 😎",
-  "¡Eso es, perfecto, te camelo caramelo! 🔥",
-  "¡Ole tú huevos! 💪",
-  "¡Exacto, estás on fire! 🚀",
-  "¡Qué máquina eres! 😍",
-  "¡Correcto, así se hace! 👏",
-  "¡Te lo sabes de memoria ya! 💥"
+  "¡Muy bien! 😎",
+  "¡Eso es, perfecto, te camelo caramelo! 🔥",
+  "¡Ole tú huevos! 💪",
+  "¡Exacto, estás on fire! 🚀",
+  "¡Qué máquina eres! 😍",
+  "¡Correcto, así se hace! 👏",
+  "¡Te lo sabes de memoria ya! 💥"
 ];
 
 // --- VARIABLES ---
 let i = 0;
 let puntuacion = 0;
+let preguntasParaEsteTest = [];
 
 // --- FUNCIONES ---
+
+/**
+ * Baraja un array aleatoriamente (algoritmo Fisher-Yates).
+ * @param {Array} array El array a barajar.
+ */
+function barajarPreguntas(array) {
+  let currentIndex = array.length,  randomIndex;
+
+  while (currentIndex != 0) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+  return array;
+}
+
+/**
+ * Muestra un mensaje en el chat.
+ * @param {string} texto El contenido del mensaje.
+ * @param {string} tipo 'bot' o 'user'.
+ */
 function mostrarMensaje(texto, tipo) {
-  const chat = document.getElementById("chat");
-  const msg = document.createElement("div");
-  msg.classList.add("message", tipo);
-  msg.innerHTML = texto.replace(/\n/g, "<br>");
-  chat.appendChild(msg);
-  chat.scrollTop = chat.scrollHeight;
+  const chat = document.getElementById("chat");
+  const msg = document.createElement("div");
+  msg.classList.add("message", tipo);
+  // Convierte los saltos de línea (\n) en etiquetas <br>
+  msg.innerHTML = texto.replace(/\n/g, "<br>");
+  chat.appendChild(msg);
+  chat.scrollTop = chat.scrollHeight;
 }
 
+/**
+ * Muestra la pregunta actual y sus opciones en un solo mensaje.
+ */
 function mostrarPregunta() {
-  if (!preguntas[i]) return;
+  // Usa el array de 20 preguntas
+  if (!preguntasParaEsteTest[i]) return;
 
-  const p = preguntas[i];
-  const textoCompleto = `${p.texto}\n\n${p.opciones.join("\n")}`;
-  mostrarMensaje(textoCompleto, "bot");
+  const p = preguntasParaEsteTest[i];
+  // Une la pregunta y las opciones en un solo texto
+  const textoCompleto = `${p.texto}\n\n${p.opciones.join("\n")}`;
+  mostrarMensaje(textoCompleto, "bot");
 }
 
+/**
+ * Procesa la respuesta del usuario.
+ * @param {string} opcionElegida "a", "b", "c" o "d".
+ */
 function responder(opcionElegida) {
-  if (!preguntas[i]) return;
+  // Usa el array de 20 preguntas
+  if (!preguntasParaEsteTest[i]) return;
 
-  const p = preguntas[i];
-  mostrarMensaje(`${opcionElegida.toUpperCase()}`, "user");
+  const p = preguntasParaEsteTest[i];
+  // Muestra solo la letra, como pediste
+  mostrarMensaje(`${opcionElegida.toUpperCase()}`, "user");
 
-  if (opcionElegida === p.correcta) {
-    puntuacion++;
-    mostrarMensaje(frases_animo[Math.floor(Math.random() * frases_animo.length)], "bot");
-  } else {
-    mostrarMensaje(`❌ Incorrecto. La respuesta correcta era ${p.correcta.toUpperCase()}.`, "bot");
-  }
+  if (opcionElegida === p.correcta) {
+    puntuacion++;
+    mostrarMensaje(frases_animo[Math.floor(Math.random() * frases_animo.length)], "bot");
+  } else {
+    mostrarMensaje(`❌ Incorrecto. La respuesta correcta era ${p.correcta.toUpperCase()}.`, "bot");
+  }
 
-  i++;
-  if (i < preguntas.length) {
-    setTimeout(mostrarPregunta, 800);
-  } else {
-    setTimeout(() => {
-      mostrarMensaje(`🏁 Has acertado ${puntuacion} de ${preguntas.length} preguntas. 💡`, "bot");
-      desactivarBotones();
-    }, 800);
-  }
+  i++;
+  // Comprueba si quedan preguntas en el array de 20
+  if (i < preguntasParaEsteTest.length) {
+    setTimeout(mostrarPregunta, 800);
+  } else {
+    setTimeout(() => {
+      // Muestra la puntuación final sobre 20 (o el total que haya)
+      mostrarMensaje(`🏁 Has acertado ${puntuacion} de ${preguntasParaEsteTest.length} preguntas. 💡`, "bot");
+      desactivarBotones();
+    }, 800);
+  }
 }
 
+/**
+ * Desactiva los botones de opción al final del test.
+ */
 function desactivarBotones() {
-  document.querySelectorAll(".btn-opcion").forEach(btn => btn.disabled = true);
+  document.querySelectorAll(".btn-opcion").forEach(btn => btn.disabled = true);
 }
 
 // --- ARRANQUE ---
 document.addEventListener("DOMContentLoaded", () => {
-  i = 0;
-  puntuacion = 0;
-  mostrarMensaje("🧠 Bienvenido al test. Pulsa A, B, C o D para responder 💬", "bot");
-  setTimeout(mostrarPregunta, 500);
+  i = 0;
+  puntuacion = 0;
+  
+  // 1. Barajamos TODO el array de preguntas
+  barajarPreguntas(preguntas); 
+  
+  // 2. Nos quedamos solo con las 20 primeras (o menos, si el array es más corto)
+  preguntasParaEsteTest = preguntas.slice(0, 20); 
 
-  document.getElementById("btnA").onclick = () => responder("a");
-  document.getElementById("btnB").onclick = () => responder("b");
-  document.getElementById("btnC").onclick = () => responder("c");
-  document.getElementById("btnD").onclick = () => responder("d");
+  mostrarMensaje(`🧠 Bienvenido al test. Se han elegido ${preguntasParaEsteTest.length} preguntas al azar. 💬`, "bot");
+  setTimeout(mostrarPregunta, 500);
+
+  document.getElementById("btnA").onclick = () => responder("a");
+  document.getElementById("btnB").onclick = () => responder("b");
+  document.getElementById("btnC").onclick = () => responder("c");
+  document.getElementById("btnD").onclick = () => responder("d");
 });
-
-
-
-
-
-
-
-
-
