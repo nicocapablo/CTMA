@@ -509,8 +509,187 @@ const preguntas = [
     "d) En la subregión Mediterranea, se prevé un incremento de la precipitación a finales de siglo."
   ],
   correcta: "c"
+},
+{
+  texto: "Respecte al concepte de 'desenvolupament sostenible', quina de les següents respostes és falsa?",
+  opciones: [
+    "a) Desenvolupar-se consisteix en satisfer les necessitats, creant una pressió exponencial sobre els recursos.",
+    "b) La satisfacció de les necessitats es realitza mitjançant el consum de béns i serveis.",
+    "c) Per aconseguir un desenvolupament sostenible, les necessitats de les generacions presents s’han de satisfer sense comprometre la capacitat de les generacions futures de satisfer les seves pròpies necessitats.",
+    "d) La taxa de generació de residus d'un país no ha de superar la seva capacitat d'assimilació més l'exportació a altres països."
+  ],
+  correcta: "d"
+},
+{
+  texto: "Quina de les següents respostes no és un pilar fonamental del concepte de desenvolupament sostenible?",
+  opciones: [
+    "a) Creixement econòmic.",
+    "b) Protecció i millora del medi ambient.",
+    "c) Equitat social.",
+    "d) Totes les altres afirmacions són correctes."
+  ],
+  correcta: "d"
+},
+{
+  texto: "En relació a l'Anàlisi de Cicle de Vida (ACV), quina de les següents afirmacions és falsa?",
+  opciones: [
+    "a) L'ACV inclou els següents passos interrelacionats: (1) Definició d'objectius i abast, (2) Anàlisi d'inventari, (3) Avaluació d'impacte i (4) Interpretació.",
+    "b) Els principis i l'estructura de l'ACV estan definits en la norma UNE-EN ISO 9000 Gestió Ambiental.",
+    "c) L'ACV és útil quan es comparen materials, productes, processos o activitats des d'un punt de vista ambiental.",
+    "d) L'ACV és un procés utilitzat per avaluar les càrregues ambientals associades a un producte, procés o activitat al llarg del seu cicle de vida."
+  ],
+  correcta: "b"
+},
+{
+  texto: "L'ACV permet:",
+  opciones: [
+    "a) Desplaçar problemes ambientals d'un medi a un altre.",
+    "b) Quantificar les emissions ambientals a l'aire, a l'aigua i al sòl en relació amb cada etapa del cicle de vida i/o amb els processos principals.",
+    "c) Realitzar una comparació ràpida del comportament ambiental de dos productes similars.",
+    "d) Avaluar la sensibilitat de l'entorn."
+  ],
+  correcta: "b"
+},
+{
+  texto: "Quan un sistema o un subsistema proporciona diferents productes i no tots ells estan inclosos dins dels límits de l'ACV:",
+  opciones: [
+    "a) S'ha de fer una assignació de càrregues.",
+    "b) S'han de caracteritzar els impactes.",
+    "c) S'han de normalitzar els impactes.",
+    "d) S'ha d'indicar la profunditat de l'estudi."
+  ],
+  correcta: "a"
+},
+{
+  texto: "L'inventari del cicle de vida permet:",
+  opciones: [
+    "a) Convertir la informació recopilada en informació interpretable.",
+    "b) Avaluar els possibles impactes sobre la salut humana i l'ambient d'un producte, procés o activitat.",
+    "c) Quantificar els requisits energètics i de matèries primeres, les emissions atmosfèriques, les emissions de corrents residuals líquides, els residus sòlids i altres emissions per a tot el cicle de vida d'un producte, procés o activitat.",
+    "d) Definir l'objectiu i l'abast de l'estudi."
+  ],
+  correcta: "c"
+},
+{
+  texto: "La Directiva 2010/75/UE sobre emissions industrials es basa en el principi de:",
+  opciones: [
+    "a) Compensació econòmica",
+    "b) Múltiples finestres",
+    "c) Permisos permanents",
+    "d) Dret del públic a participar"
+  ],
+  correcta: "d"
+},
+{
+  texto: "Dins del marc de la Llei 20/2009 de prevenció i control ambiental de les activitats:",
+  opciones: [
+    "a) Les activitats de l'Annex I estan subjectes a autorització ambiental amb declaració d'impacte ambiental o Declaració d'impacte ambiental amb autorització substantiva.",
+    "b) Les activitats de l'Annex II estan subjectes a llicència ambiental.",
+    "c) Les activitats de l'Annex III estan subjectes a comunicació ambiental.",
+    "d) Totes les afirmacions són certes."
+  ],
+  correcta: "d"
+},
+{
+  texto: "Respecte a una activitat inclosa a l'Annex III de la Llei 20/2009 sobre prevenció i control ambiental de les activitats que es troba en una població amb 100.000 habitants, qui és el responsable d'emetre el permís?",
+  opciones: [
+    "a) La Generalitat de Catalunya",
+    "b) El Consell Comarcal",
+    "c) L'Associació de Veïns",
+    "d) L'Ajuntament"
+  ],
+  correcta: "d"
+},
+{
+  texto: "La Directiva 2010/75/UE sobre emissions industrials:",
+  opciones: [
+    "a) Estableix valors límit d'emissió per a cada activitat inclosa a l'Annex I.",
+    "b) Té com a objectiu principal la reparació dels danys ambientals.",
+    "c) Prescriu l'ús de tècniques o tecnologies específiques depenent de l'annex de l'activitat.",
+    "d) Exigeix obtenir un permís en cas d'estar inclosos dins de l'Annex I."
+  ],
+  correcta: "d"
+},
+{
+  texto: "Respecte als gasos d'efecte hivernacle, quina de les següents afirmacions és falsa?",
+  opciones: [
+    "a) El vapor d'aigua no és un gas d'efecte hivernacle.",
+    "b) El diòxid de carboni (CO2), el metà (CH4) i l'òxid nitrós (N2O) estan presents de manera natural a l'atmosfera però també són d'origen antropogènic.",
+    "c) Els gasos d'efecte hivernacle són transparents a l'energia d’ona curta.",
+    "d) El Potencial d'Escalfament Global de l'hexafluorur de sofre (SF6) és superior al Potencial d'Escalfament Global del diòxid de carboni (CO2)."
+  ],
+  correcta: "a"
+},
+{
+  texto: "Pel que fa als escenaris d'emissió, quina de les següents afirmacions és certa?",
+  opciones: [
+    "a) En tots els escenaris d'emissió, les emissions de CO2 augmentaran durant el segle XXI.",
+    "b) En tots els escenaris d'emissió, les emissions de CO2 disminuiran durant el segle XXI.",
+    "c) En tots els escenaris d'emissió, la concentració de CO2 a l'atmosfera augmentarà durant el segle XXI.",
+    "d) En tots els escenaris d'emissió, la concentració de CO2 a l'atmosfera disminuirà durant el segle XXI."
+  ],
+  correcta: "c"
+},
+{
+  texto: "Quina de les següents afirmacions és certa?",
+  opciones: [
+    "a) Segons el Protocol de Kyoto, l’Estat Espanyol havia de disminuir les seves emissions de CO2, N2O i CH4 en un 8% respecte als nivells de l'any 90 durant el període 2008-2012.",
+    "b) Segons el Protocol de Kyoto, l’Estat Espanyol havia de disminuir les seves emissions de CO2, N2O i CH4 en un 5% respecte als nivells de l'any 90 durant el període 2008-2012.",
+    "c) Segons el Protocol de Kyoto, l’Estat Espanyol podia augmentar les seves emissions de CO2, N2O i CH4 en un 15% respecte als nivells de l'any 90 durant el període 2008-2012.",
+    "d) Espanya no ha ratificat el Protocol de Kyoto, i per tant, no té límits en la generació d'emissions de CO2, N2O i CH4."
+  ],
+  correcta: "c"
+},
+{
+  texto: "Quina de les següents afirmacions és falsa?",
+  opciones: [
+    "a) El Protocol de Kyoto va entrar en vigor el 2005.",
+    "b) La millor opció per fer front al canvi climàtic és implementar mesures d'adaptació en línia amb mesures de mitigació.",
+    "c) Els Plans Nacionals d'Assignació de Drets d'Emissió regulen qüestions de comerç internacional.",
+    "d) Els països en vies de desenvolupament que ja han ratificat el Protocol de Kyoto no havien de complir cap límit d'emissions."
+  ],
+  correcta: "c"
+},
+{
+  texto: "Pel que fa a EMAS i ISO 14001, quina de les següents afirmacions és falsa?",
+  opciones: [
+    "a) Per verificar que el sistema de gestió ambiental compleix els requisits, en cas del Reglament EMAS es fa una certificació mentre que en cas de la norma ISO 14001 es realitza una verificació.",
+    "b) La comunicació externa dels resultats no és obligatòria en l'estàndard ISO 14001, mentre que el Reglament EMAS manté aquesta obligació.",
+    "c) El Reglament EMAS és d’àmbit europeu, mentre que la norma ISO 14001 és d’àmbit internacional.",
+    "d) Tant EMAS com ISO 14001 són voluntaris."
+  ],
+  correcta: "a"
+},
+{
+  texto: "Pel que fa a EMAS, quina de les següents afirmacions és falsa?",
+  opciones: [
+    "a) El Reglament EMAS és voluntari.",
+    "b) El Reglament EMAS promou la millora contínua del comportament ambiental de les organitzacions, entre altres.",
+    "c) El Reglament EMAS només s'aplica a organitzacions privades.",
+    "d) Un dels principals beneficis per a les organitzacions que implementen EMAS és augmentar la motivació i la conscienciació dels treballadors."
+  ],
+  correcta: "c"
+},
+{
+  texto: "Pel que fa als Sistemes de Gestió Ambiental, quina de les següents afirmacions és certa?",
+  opciones: [
+    "a) Van néixer a la dècada dels 90 com a instrument voluntari per a aquelles empreses que volien assolir un alt nivell de protecció ambiental.",
+    "b) Inclouen l'estructura organitzativa, responsabilitats, pràctiques, procediments, processos i recursos per determinar i implementar la política ambiental.",
+    "c) Són una manera sistemàtica i planificada de gestionar els aspectes ambientals de l'empresa.",
+    "d) Totes les anteriors són certes."
+  ],
+  correcta: "d"
+},
+{
+  texto: "Pel que fa als Sistemes de Gestió Ambiental, quina de les següents afirmacions és falsa?",
+  opciones: [
+    "a) Tant el Reglament EMAS com la norma ISO 14001 es basen en el Cicle de Deming.",
+    "b) La certificació ISO 14001:2004 és l'acte pel qual un tercer dona proves de la conformitat del sistema de gestió ambiental de l'organització en relació amb els requisits establerts en la norma ISO 14001:2004.",
+    "c) La política ambiental quantifica l'objectiu ambiental a assolir l'any vinent.",
+    "d) Les auditories externes són obligatòries tant en el Reglament EMAS com en la norma ISO 14001."
+  ],
+  correcta: "c"
 }
-
 ];
 // --- FRASES DE ÁNIMO ---
 const frases_animo = [
@@ -632,3 +811,4 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("btnC").onclick = () => responder("c");
   document.getElementById("btnD").onclick = () => responder("d");
 });
+
