@@ -509,16 +509,6 @@ const preguntas = [
     "d) En la subregión Mediterranea, se prevé un incremento de la precipitación a finales de siglo."
   ],
   correcta: "c"
-},
-{
-  texto: "Respecto a los límites de crecimiento sostenible, ¿cuál de las siguientes afirmaciones es cierta?",
-  opciones: [
-    "a) La imagen corresponde a un caso de carga precariamente sostenible.",
-    "b) La imagen corresponde a un caso de recursos sin carga.",
-    "c) La imagen corresponde a un caso de crecimiento sostenible, que favorece que la capacidad de carga futura sea más pequeña que la capacidad de carga actual (KL’<KL).",
-    "d) Para que el crecimiento de una determinada región sea sostenible, la huella ecológica asociada a su consumo de recursos debe ser superior a la superficie de la propia región."
-  ],
-  correcta: "a"
 }
 
 ];
@@ -596,6 +586,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("btnC").onclick = () => responder("c");
   document.getElementById("btnD").onclick = () => responder("d");
 });
+
 
 
 
