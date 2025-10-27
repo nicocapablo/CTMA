@@ -1,15 +1,16 @@
+/* --- CONFIGURACIÓN GENERAL --- */
 html, body {
   margin: 0;
   padding: 0;
-  height: 100svh; /* altura visible en móviles modernos */
-  background: #ece5dd;
+  height: 100svh; /* altura visible real en móviles */
   font-family: Arial, sans-serif;
+  background: #ece5dd;
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
 
-/* Contenedor del chat */
+/* --- CONTENEDOR DEL CHAT --- */
 .chat-container {
   flex: 1;
   overflow-y: auto;
@@ -18,10 +19,34 @@ html, body {
   scroll-behavior: smooth;
   display: flex;
   flex-direction: column;
-  padding-bottom: 90px; /* espacio para los botones */
+  padding-bottom: 100px; /* deja espacio para los botones */
 }
 
-/* Contenedor de botones */
+/* --- MENSAJES DEL CHAT --- */
+.message {
+  max-width: 80%;
+  margin: 6px 0;
+  padding: 10px 14px;
+  border-radius: 14px;
+  word-wrap: break-word;
+  font-size: 16px;
+  line-height: 1.4;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.message.bot {
+  background: #ffffff;
+  align-self: flex-start;
+  border-top-left-radius: 4px;
+}
+
+.message.user {
+  background: #dcf8c6;
+  align-self: flex-end;
+  border-top-right-radius: 4px;
+}
+
+/* --- CONTENEDOR DE BOTONES --- */
 .button-container {
   position: fixed;
   bottom: 0;
@@ -31,60 +56,48 @@ html, body {
   border-top: 1px solid #ccc;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
   padding: 14px calc(env(safe-area-inset-left) + 10px) calc(env(safe-area-inset-bottom) + 16px);
   z-index: 10;
 }
 
-/* Estilos botones */
-button {
-  font-size: 20px;
-  font-weight: bold;
+/* --- ESTILO BASE DE LOS BOTONES --- */
+.btn-opcion {
+  color: white;
   border: none;
-  border-radius: 12px;
-  padding: 14px 28px;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
   cursor: pointer;
   transition: transform 0.1s ease, background 0.3s ease;
+  flex: 1; /* todos los botones del mismo ancho */
+  max-width: 80px;
 }
 
-button:active {
-  transform: scale(0.96);
+.btn-opcion:active {
+  transform: scale(0.95);
 }
 
-.btn-verdadero {
-  background-color: #34A853;
-  color: white;
+/* --- COLORES POR BOTÓN --- */
+#btnA { background: #34A853; } /* verde */
+#btnB { background: #4285F4; } /* azul */
+#btnC { background: #FBBC05; color: black; } /* amarillo */
+#btnD { background: #EA4335; } /* rojo */
+
+/* --- EFECTOS DE DESACTIVACIÓN --- */
+.btn-opcion:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
-.btn-falso {
-  background-color: #EA4335;
-  color: white;
+/* --- BARRA DE DESPLAZAMIENTO MÁS LIMPIA (OPCIONAL) --- */
+.chat-container::-webkit-scrollbar {
+  width: 6px;
 }
-
-/* Mensajes tipo chat */
-.message {
-  max-width: 80%;
-  margin: 6px 0;
-  padding: 10px 14px;
-  border-radius: 14px;
-  word-wrap: break-word;
-  font-size: 16px;
-  line-height: 1.4;
+.chat-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
-
-.message.bot {
-  background: #ffffff;
-  align-self: flex-start;
-  border-top-left-radius: 4px;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-}
-
-.message.user {
-  background: #dcf8c6;
-  align-self: flex-end;
-  border-top-right-radius: 4px;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-}
-
 
 
