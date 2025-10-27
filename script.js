@@ -550,7 +550,7 @@ function responder(opcionElegida) {
   if (!preguntas[i]) return;
 
   const p = preguntas[i];
-  mostrarMensaje(`Has elegido: ${opcionElegida.toUpperCase()}`, "user");
+  mostrarMensaje(`${opcionElegida.toUpperCase()}`, "user");
 
   if (opcionElegida === p.correcta) {
     puntuacion++;
@@ -586,6 +586,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("btnC").onclick = () => responder("c");
   document.getElementById("btnD").onclick = () => responder("d");
 });
+
 
 
 
