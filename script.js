@@ -542,8 +542,8 @@ function mostrarPregunta() {
   if (!preguntas[i]) return;
 
   const p = preguntas[i];
-  mostrarMensaje(p.texto, "bot");
-  p.opciones.forEach(op => mostrarMensaje(op, "bot"));
+  const textoCompleto = `${p.texto}\n\n${p.opciones.join("\n")}`;
+  mostrarMensaje(textoCompleto, "bot");
 }
 
 function responder(opcionElegida) {
@@ -586,6 +586,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("btnC").onclick = () => responder("c");
   document.getElementById("btnD").onclick = () => responder("d");
 });
+
 
 
 
