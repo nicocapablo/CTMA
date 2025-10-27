@@ -50,7 +50,7 @@ const preguntas = [
     ],
     correcta: "b"
   },
-    {
+  {
     texto: "En el marco del Análisis de Ciclo de Vida, señala la respuesta correcta:",
     opciones: [
       "a) La identificación y cuantificación de las entradas y salidas de cada proceso unitario forma parte de la etapa de análisis de inventario.",
@@ -80,7 +80,7 @@ const preguntas = [
     ],
     correcta: "a"
   },
-    {
+  {
     texto: "¿Cuál de las siguientes afirmaciones es correcta?",
     opciones: [
       "a) La huella ecológica mide la máxima población de una especie concreta que puede ser soportada por un hábitat determinado.",
@@ -129,7 +129,7 @@ const preguntas = [
       "d) El agujero de la capa de ozono no tiene vía de solución."
     ],
     correcta: "c"
-  }
+  },
   {
     texto: "De acuerdo con la Directiva 2010/75/EC sobre Emisiones Industriales, señala la respuesta falsa:",
     opciones: [
@@ -199,7 +199,328 @@ const preguntas = [
       "d) La degradación de la capa de ozono es causada principalmente por los clorofluorocarbonos (CFCs) liberados por actividades humanas."
     ],
     correcta: "c"
-  }
+  },
+  {
+  texto: "En relació al balanç energètic de la Terra, assenyala quina de les següents afirmacions és falsa:",
+  opciones: [
+    "a) La fracció d’energia solar que arriba a la terra es trobara bàsicament en l’espectre visible",
+    "b) Els gasos de l'atmosfera són transparents a les radiacions d'ona curta però no a les radiacions d'ona llarga",
+    "c) El principal causant de l'escalfament global de la Terra és la variació en la quantitat de radiació terrestre absorbida",
+    "d) Aplicant la llei de Wein es pot trobar la radiació emesa per la Terra (aproximació de la Terra a un cos negre que està a una determinada temperatura)"
+  ],
+  correcta: "c"
+},
+{
+  texto: "Quina de les següents afirmacions és falsa:",
+  opciones: [
+    "a) La Cimera de Kyoto (1997) tenia com a objectiu principal la reducció de les emissions de gasos d'efecte hivernacle",
+    "b) Com a resultat de la Cimera de Kyoto (1997) es va redatar l'Agenda 21, document que tenia com a objecti afavorir un model de desenvolupament respectuós amb el medi ambient",
+    "c) A la Cimera de la Terra celebrada a Rio de Janeiro (1992) es donà especial importancia als problemes del canvi climatic i la biodiversitat",
+    "d) A la Cimera de la Terra celebrada a Rio de Janeiro (1992) es conclogué com a punt clau la necessitat de passar d'una acció reparadora a una acció de prevenció"
+  ],
+  correcta: "b"
+},
+{
+  texto: "Quina de les següents respostes no forma part de les arees d'actuació prioritária del VI Programa d'Acció Ambiental de la UE?",
+  opciones: [
+    "a) Intentar resoldre el canvi climatic",
+    "b) Reducció del forat de la capa d'ozó",
+    "c) Protegir la naturalesa i la biodiversitat",
+    "d) Utilització sostenible dels recursos naturals"
+  ],
+  correcta: "b"
+},
+{
+  texto: "A quin tipus de model correspon un ecosistema amb una entrada d'energia limitada, una entrada de recursos limitada i una sortida de recursos limitada?",
+  opciones: [
+    "a) Model tipus I",
+    "b) Model tipus II",
+    "c) Model tipus III",
+    "d) Model híbrid entre el Tipus I i el Tipus II"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Respecte els límits de creixement sostenible, quina de les següents afirmacions és certa:",
+  opciones: [
+    "a) La carrega ecologica d'un recurs es considera sostenible quan aquesta és legal o inferior a la seva capacitat de carrega (L=<KL)",
+    "b) El cas d'un recurs sense carrega provoca un creixement insostenible",
+    "c) Un creixement sostenible afavoreix que la capacitat de carrega futura sigui més petita que la capacitat de carrega actual (K'L<KL)",
+    "d) Per a que el creixement d'una determinada regió sigui sostenible, s'obliga a que la petjada ecològica associada al seu consum de recursos sigui superior a la superfície de la propia regió"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Respecte als diferents enfocaments de la sostenibilitat, quina de les següents afirmacions és certa?",
+  opciones: [
+    "a) L'enfocament de la sostenibilitat forta es basa en l'anomenada economia ambiental",
+    "b) L'enfocament de la sostenibilitat débil es basa en la desmaterialització de l'economia",
+    "c) L'enfocament de la sostenibilitat dèbil inclou afegir un sobrecost economic als productes, destinats a restablir les materies primeres utilitzades",
+    "d) L'economia ambiental té com objectiu la reducció/substitució de l'us del capital per matèries primeres"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Respecte al forat de la capa d'ozó, quina unitat s'utilitza per indicar la concentració de l'ozó en l'atmosfera?",
+  opciones: [
+    "a) Dobson",
+    "b) GWM",
+    "c) MTL",
+    "d) Cap de les anteriors"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Respecte als principals problemes mediambientals, quina de les següents substàncies NO és rellevant per la contaminació fotoquímica?",
+  opciones: [
+    "a) CH4",
+    "b) COVs",
+    "c) CO2",
+    "d) Cap de les anteriors"
+  ],
+  correcta: "c"
+},
+{
+  texto: "Respecte als principals problemes mediambientals, quina de les següents afirmacions és falsa?",
+  opciones: [
+    "a) L'esgotament de la capa d'ozó es produit sobretot per l'emissió de CFCs i halons",
+    "b) L'acidificació és deguda sobretot a les emissions d'oxid de sofre i diòxid de nitrogen",
+    "c) L'eutrofització és deguda principalment a un excés de COVs (compostos orgànics volàtils) en l'aire",
+    "d) La contaminació fotoquímica pot causar problemes respiratoris com l'asma"
+  ],
+  correcta: "c"
+},
+{
+  texto: "Amb quines sigles es coneix l'ordenança municipal que regula la tramitació de llicències ambientals a Barcelona?",
+  opciones: [
+    "a) IPPC",
+    "b) LIIA",
+    "c) PCAA",
+    "d) OMAIIAA"
+  ],
+  correcta: "d"
+},
+{
+  texto: "Segons la PCAA, si sol·licitem una autorització ambiental, i en el temps establert no es resolt de manera expressa, indiqueu la resposta incorrecta:",
+  opciones: [
+    "a) Entendrem l'autorització com positiva per silenci administratiu",
+    "b) Entendrem l'autorització com negativa per silenci administratiu",
+    "c) La no-resolució en el termini establert indica a la persona sol·licitant que ha estat desestimada la sol·licitud d'autorització",
+    "d) En el cas de no-resolució, podem presentar un recurs administratiu"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Respecte a qui és i qui no és tècnic competent en projectes tècnics ambientals, indiqueu la resposta incorrecta:",
+  opciones: [
+    "a) La Llei no determina quines titulacions són les habilitades. Diu que han d'estar signades per tècnics competents.",
+    "b) Un biòleg no pot ser en cap cas tècnic competent en projectes ambientals",
+    "c) Com a norma general, si el projecte és senzill i les instal·lacions són complementàries a l'edifici, es pot considerar que un arquitecte és un tècnic competent",
+    "d) Com a norma general, els projectes de l'annex II (incidència mediambiental mitjana) tant els pot fer un enginyer, enginyer tècnic, arquitecte tècnic o arquitectes"
+  ],
+  correcta: "b"
+},
+{
+  texto: "Respecte als contaminants orgànics persistents, quina de les següents informacions és falsa?",
+  opciones: [
+    "a) Els COPs són substàncies organoclorades",
+    "b) El PCB és un tipus de plaguicida força habitual en països africans",
+    "c) Les dioxines i els furans s'inclouen dintre dels anomenats 'dotze bruts'",
+    "d) El conveni d'Estocolm és un acord multilateral per adoptar mesures de control per eliminar o restringir l'ús dels COPs"
+  ],
+  correcta: "b"
+},
+{
+  texto: "Quin dels següents orgànics persistents es produeix de manera accidental?",
+  opciones: [
+    "a) Les dioxines i furans",
+    "b) Els PCBs",
+    "c) DDT",
+    "d) Tots es produeixen de manera voluntària per aconseguir algun objectiu. Cap és accidental"
+  ],
+  correcta: "a"
+},
+{
+  texto: "A quins dels següents productes no poden concedir-se etiquetes ecològiques?",
+  opciones: [
+    "a) Mobiliari",
+    "b) Ordinadors",
+    "c) Medicaments",
+    "d) No hi ha restriccions de cap dels productes anteriors sempre que superin favorablement les proves corresponents"
+  ],
+  correcta: "c"
+},
+{
+  texto: "Quina de les següents afirmacions és falsa?",
+  opciones: [
+    "a) Dins dels tipus de riscs associats a instal·lacions industrials, els riscs majors són els considerats com a riscs mediambientals",
+    "b) La responsabilitat penal acompanya a les responsabilitats administratives i civils quan s'han de reparar danys al medi ambient",
+    "c) Les Ecoetiquetes poden concedir-se a productes i serveis",
+    "d) A Catalunya es poden trobar dos tipus d'etiquetes ecològiques: el Distintiu de Garantia de Qualitat Ambiental i l'Etiqueta Ecològica de la Unió Europea"
+  ],
+  correcta: "a"
+},
+{
+  texto: "Respecte als sistemes de Gestió Ambiental EMAS i ISO 14000, quina de les següents afirmacions és falsa?",
+  opciones: [
+    "a) El promotor del Reglament EMAS és l'Administració Pública (UE) mentre que el de la norma ISO 14001 és una entitat privada (International Standard Organization)",
+    "b) En el Reglament EMAS no és obligatori comunicar externament els resultats, mentre que en la norma ISO 14001 sí que existeix aquesta obligació",
+    "c) Tant el Reglament EMAS com la ISO 14001 són d'aplicació voluntàries",
+    "d) El Reglament EMAS és d'àmbit europeu mentre que la norma ISO 14001 és d'àmbit internacional"
+  ],
+  correcta: "b"
+},
+{
+  texto: "En el marco del concepto de 'Desarrollo sostenible', ¿cuál de las siguientes respuestas es falsa?",
+  opciones: [
+    "a) La satisfacción de las necesidades provoca una presión exponencial sobre los recursos",
+    "b) La satisfacción de las necesidades se realiza a través del consumo de bienes y servicios",
+    "c) Para un desarrollo sostenible deben satisfacerse las necesidades del presente aun comprometiendo la capacidad de las generaciones futuras para atender sus propias necesidades",
+    "d) La elasticidad de los factores implica suplir el agotamiento de materias primas por una mayor inversión que permita aumentar la eficiencia de los recursos o encontrar materiales sustitutivos."
+  ],
+  correcta: "c"
+},
+{
+  texto: "¿Cuál de las siguientes afirmaciones es correcta?",
+  opciones: [
+    "a) El Protocolo de Kioto todavia está vigente.",
+    "b) El Protocolo de Kioto entró en vigor cuando lo firmaron 55 países representando el 55% de las emisiones de gases de efecto invernadero emitidas en el año 1990.",
+    "c) El Protocolo de Kioto regula sólo las emisiones de CO2.",
+    "d) El Acuerdo de París ratificado el 2016 tiene como objetivo la reducción de las emisiones de gases de efecto invernadero en un 100% el 2030."
+  ],
+  correcta: "b"
+},
+{
+  texto: "Respecto al Sistema de Gestión Ambiental EMAS, ¿cuál de las siguientes afirmaciones es falsa?",
+  opciones: [
+    "a) Las empresas que han implantado un sistema EMAS pueden poner el logo de EMAS en el envase de los productos que fabrican.",
+    "b) Contribuye a mejorar la relación de la empresa con el entorno.",
+    "c) Reporta beneficios económicos a largo plazo.",
+    "d) Utiliza indicadores relativos para no penalizar el crecimiento de la empresa."
+  ],
+  correcta: "a"
+},
+{
+  texto: "Señala la respuesta falsa:",
+  opciones: [
+    "a) El Mecanismo de Aplicación Conjunta pone en contacto países en vías de desarrollo y países ya desarrollados.",
+    "b) El Comercio de Emisiones existe tanto a nivel de países como de instalaciones.",
+    "c) Los países en vías de desarrollo no están obligados a implementar Mecanismos de Desarrollo Limpio.",
+    "d) Tanto en el Mecanismo de Aplicación Conjunta como en el Mecanismo de Desarrollo Limpio, la reducción de emisiones se calcula a partir de las que se producirían en ausencia de la actividad proyectada."
+  ],
+  correcta: "a"
+},
+{
+  texto: "¿Cuál de las siguientes afirmaciones es falsa?",
+  opciones: [
+    "a) Los Sistemas de Gestión Ambiental se aplican a productos.",
+    "b) Los Sistemas de Gestión Ambiental deben ser revisados periódicamente.",
+    "c) Tener un Sistema de Gestión Ambiental es voluntario.",
+    "d) El ahorro de recursos es una motivación para la implantación de Sistemas de Gestión Ambiental."
+  ],
+  correcta: "a"
+},
+{
+  texto: "¿Cuál de las siguientes afirmaciones es cierta?",
+  opciones: [
+    "a) El Análisis de Ciclo de Vida es un instrumento obligatorio para las empresas que quieren fabricar un producto nuevo.",
+    "b) Los Sistemas de Gestión Ambiental son obligatorios para licitar con la Administración Pública.",
+    "c) El cumplimiento de la Directiva sobre Emisiones Industriales es voluntario para las actividades del Anexo I.",
+    "d) Los Sistemas de Gestión Ambiental son instrumentos voluntarios que aplican a organizaciones."
+  ],
+  correcta: "d"
+},
+{
+  texto: "Señala la respuesta falsa:",
+  opciones: [
+    "a) Solo las industrias manufactureras pueden implementar un sistema de gestión ambiental.",
+    "b) El número de empresas certificadas con ISO 14001 es mucho mayor que el número de empresa registradas con un sistema EMAS.",
+    "c) El promotor del Reglamento EMAS es la administración pública (Unión Europea).",
+    "d) La adopción de la norma ISO 14001 es voluntaria."
+  ],
+  correcta: "a"
+},
+{
+  texto: "El Portal de Emisiones Industriales permite conocer las emisiones contaminantes:",
+  opciones: [
+    "a) De todas las empresas europeas.",
+    "b) De todas las empresas europeas que forman parte del Anexo I de la Directiva en Emisiones Industriales.",
+    "c) De las empresas europeas que forman parte del Anexo I de la Directiva en Emisiones Industriales y emiten por encima del valor umbral fijado (sin tener una aproximación sectorial).",
+    "d) De las empresas europeas que forman parte del Anexo I de la Directiva en Emisiones Industriales y emiten por encima del Valor Límite de Emisión fijado por la Mejor Técnica Disponible."
+  ],
+  correcta: "c"
+},
+{
+  texto: "¿Cuál de las siguientes afirmaciones es correcta?",
+  opciones: [
+    "a) La huella ecológica mide la máxima población de una especie concreta que puede ser soportada en un hábitat determinado, sin disminuir permanentemente la productividad de éste.",
+    "b) La capacidad de carga representa la superficie de terreno o de agua ecológicamente productivos necesarios para generar los recursos y asimilar los residuos de una población determinada.",
+    "c) En España existe un superávit ecológico.",
+    "d) Todas las respuestas anteriores son falsas."
+  ],
+  correcta: "b"
+},
+{
+  texto: "¿Cuál de las siguientes afirmaciones es falsa?",
+  opciones: [
+    "a) La capa de ozono no tiene relación directa con el cambio climático.",
+    "b) La degradación de la capa de ozono es causada principalmente por los clorofluorocarbonos (CFCS) liberados por actividades humanas.",
+    "c) La capa de ozono es una región de la atmósfera que protege la Tierra de la radiación solar ultravioleta.",
+    "d) La capa de ozono regula la temperatura global del planeta y es esencial para prevenir el cambio climático."
+  ],
+  correcta: "d"
+},
+{
+  texto: "En relación a la legalización de actividades, ¿cuál de las siguientes afirmaciones es cierta?",
+  opciones: [
+    "a) Los Valores Límite de Emisión son de carácter sectorial, dependen de cada sector productivo.",
+    "b) El proyecto de legalización debe presentarse a todas las administraciones públicas afectadas.",
+    "c) Los permisos son indefinidos.",
+    "d) Los valores umbrales del Portal de Emisiones Industriales (antiguo Registro Europeo de Emisiones y Transferencia de Contaminantes E-PRTR) cambian en función del tipo de actividad."
+  ],
+  correcta: "d"
+},
+{
+  texto: "Señala la respuesta verdadera:",
+  opciones: [
+    "a) De acuerdo con la Directiva de Emisiones Industriales, una actividad nueva debe adoptar un enfoque basado en la reacción a la contaminación.",
+    "b) Una actividad que emite por encima del Valor Límite de Emisión es ilegal.",
+    "c) La última actualización de la Directiva sobre Emisiones Industriales introduce incentivos fiscales para aquellas industrias que logren reducir sus emisiones por debajo de los límites establecidos.",
+    "d) Una actividad que emite por encima del valor umbral fijado en el Portal de Emisiones Industriales no es legal."
+  ],
+  correcta: "b"
+},
+{
+  texto: "¿Cuál de las siguientes respuestas es cierta?",
+  opciones: [
+    "a) La predicción de temperaturas futuras conlleva el uso de modelos de simulación y escenarios de emisiones.",
+    "b) La concentración de CO2 va a disminuir a lo largo del siglo XXI en todos los escenarios.",
+    "c) La generación de emisiones de CO2 va a aumentar a lo largo del siglo XXI en todos los escenarios.",
+    "d) Los impactos del cambio climático se distribuirán de forma uniforme en todo el planeta."
+  ],
+  correcta: "a"
+},
+{
+  texto: "Señala la respuesta correcta:",
+  opciones: [
+    "a) Los escenarios futuros de clima predicen más situaciones extremas en términos de frío.",
+    "b) Los modelos de predicción climática a escala regional ofrecen una menor precisión que los modelos globales.",
+    "c) Se prevé un incremento mayor de temperatura bajo el escenario SSP5-8.5 que en el escenario SSP1-1.9.",
+    "d) En la subregión Mediterranea, se prevé un incremento de la precipitación a finales de siglo."
+  ],
+  correcta: "c"
+},
+{
+  texto: "Respecto a los límites de crecimiento sostenible, ¿cuál de las siguientes afirmaciones es cierta?",
+  opciones: [
+    "a) La imagen corresponde a un caso de carga precariamente sostenible.",
+    "b) La imagen corresponde a un caso de recursos sin carga.",
+    "c) La imagen corresponde a un caso de crecimiento sostenible, que favorece que la capacidad de carga futura sea más pequeña que la capacidad de carga actual (KL’<KL).",
+    "d) Para que el crecimiento de una determinada región sea sostenible, la huella ecológica asociada a su consumo de recursos debe ser superior a la superficie de la propia región."
+  ],
+  correcta: "a"
+}
+
 ];
 
 // --- FRASES DE ÁNIMO ---
@@ -275,5 +596,6 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("btnC").onclick = () => responder("c");
   document.getElementById("btnD").onclick = () => responder("d");
 });
+
 
 
